@@ -16,8 +16,16 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #e5d9c7;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #f4f1ec;
 }
 
 /*
