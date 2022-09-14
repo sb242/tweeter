@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
-
-
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -57,7 +55,7 @@
     <main class="container">
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
-        <form method="POST" action='/tweets/'>
+        <form id="tweet-form">
           <textarea class="tweet-text" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="buttonCounter">
             <button type="submit">Tweet</button>
@@ -65,21 +63,7 @@
           </div>
         </form>
       </section>
-      <section class="tweet">
-        <header class = tweet-header>
-          <p class="name"><i class="fa-solid fa-hippo fa-lg"></i>Newton</p>
-          <p class="user-name">@SirIsaac</p>
-        </header>
-        <article>If I have seen further it is by standing on the shoulder of giants</article>
-        <footer class = tweet-footer>
-          <p class="date-posted">10 days ago</p>
-          <div class="icons">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-arrows-rotate"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </section>
+      <div class="tweet-container"><!--tweets rendered here--></div>
     </main>
   </body>
 </html>

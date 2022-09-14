@@ -38,7 +38,7 @@
   font-size: medium;
 }
 
-.tweet > article {
+.tweet-content {
   display: flex;
   justify-content: center;
   margin-left: 40px;
@@ -56,6 +56,19 @@
   font-weight: bold;
 }
 
-.fa-hippo {
+.avatarName {
+ display: flex; 
+ align-items: center;
+ margin-top: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
+}
+
+.name {
+  font-size: larger;
+  font-weight: bold;
 }
