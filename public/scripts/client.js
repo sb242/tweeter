@@ -3,6 +3,7 @@ $(() => {
   const $tweetContainer = $( ".tweet-container" );
   const $form = $('#tweet-form');
   const $error = $('.error-message');
+  const $counter = $('.counter');
 
   $error.hide(); //initially hides elements containing error message
   
@@ -81,6 +82,7 @@ $(() => {
     
     $error.slideUp(); //removes error message on successful submit
     $form.trigger('reset'); //clears form after a successful submit
+    $counter.text('140'); //resets counter
 
     //makes a post request to add a new tweet to the database, reloads all tweets after sucess.
     $.post('/tweets', serializedData, (res) => {
