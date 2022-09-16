@@ -1,29 +1,29 @@
 .tweet {
-  background-color: #d9c09c;
   margin-top: 30px;
   margin-bottom: 30px;
   border-style: solid;
   border-width: 3px;
+  background-color: #d9c09c;
 }
 
 .tweet:hover {
-  box-shadow: 3px 3px;
+  box-shadow: 5px 5px;
 }
 
 .tweet-header {
   display: flex;
   justify-content: space-between;
+  font-size: large;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: large;
 }
 
 .tweet-footer {
   display: flex;
   justify-content: space-between;
+  font-size: medium;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: medium;
 }
 
 .fa-solid:hover {
@@ -43,17 +43,17 @@
   justify-content: center;
   margin-left: 40px;
   margin-right: 40px;
+  padding-bottom: 20px;
   border-style: solid;
-  border-bottom-width: 3px;
   border-left-style: hidden;
   border-right-style: hidden;
   border-top-style: hidden;
-  padding-bottom: 20px;
+  border-bottom-width: 3px;
 }
 
 .user-name {
-  color:rgb(151, 172, 188);
   font-weight: bold;
+  color:rgb(151, 172, 188);
 }
 
 .avatarName {
@@ -69,6 +69,6 @@
 }
 
 .name {
-  font-size: larger;
   font-weight: bold;
+  font-size: larger;
 }

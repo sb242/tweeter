@@ -8,34 +8,31 @@ main.container {
 .buttonCounter {
   display: flex;
   justify-content: space-between;
-}
-
-.new-tweet {
-  margin-top: 30px;
-  width: 100%;
-}
-
-.tweet-text {
-    background-color: #e5d9c7;
-    border-bottom-width: 3px;
-    border-left-style: hidden;
-    border-right-style: hidden;
-    border-top-style: hidden;
-    outline: none;
-    width: 100%;
-    resize: none;
-}
-
-.maxCount {
-  color: red;
-}
-
-.buttonCounter {
   font-family: 'Bungee', sans-serif;
 }
 
 .buttonCounter > button {
+  font-size: 20px;
   background-color: #4054A1;
   color: white;
-  font-size: 20px;
+}
+
+.new-tweet {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.tweet-text {
+  resize: none;
+  outline: none;
+  width: 100%;
+  border-bottom-width: 3px;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-top-style: hidden;
+  background-color: #e5d9c7;
+}
+
+.maxCount {
+  color: red;
 }
