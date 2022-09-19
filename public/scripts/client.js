@@ -63,18 +63,19 @@ $(() => {
   $form.on('submit', (event) => {
     event.preventDefault(); //prevents default behavoir of form behaviour from happening, such as refreshing the page
     const serializedData = $form.serialize();
-    const serializedDataText = serializedData.split("=")[1].length; //selects only the text input from serialize()
+    const serializedDataText = decodeURIComponent(serializedData.split("=")[1]).length; //selects only the text input from serialize()
     const $errorMessage = $error.children('p'); //targets p element in error message to use custom messages
-    
+
     //form validation
     if(serializedDataText < 1) {
       $errorMessage.text('Error! Your input is empty.');
       $error.slideDown();
       return;
     }
-    
+
     //form validation
-    if(serializedDataText >= 140) {
+    if(serializedDataText > 140) {
+      console.log(serializedDataText);
       $errorMessage.text('Error! Please reduce your character count to 140 or below.');
       $error.slideDown();
       return;

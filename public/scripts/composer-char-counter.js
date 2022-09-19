@@ -11,7 +11,7 @@ $(document).ready(function() {
     
     $counter.text(textCount);
 
-    if (textCount <= 0) {
+    if (textCount < 0) {
       $counter.addClass("maxCount");
     } else {
       $counter.removeClass("maxCount");
